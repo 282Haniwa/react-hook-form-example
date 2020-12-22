@@ -14,3 +14,27 @@ a {
 * {
   box-sizing: border-box;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+input {
+  padding: 6px 8px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  /* flex-direction: row; */
+  
+}

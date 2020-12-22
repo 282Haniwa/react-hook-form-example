@@ -1,0 +1,25 @@
+.example-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.example-item {
+  width: 50%;
+  padding: 0 8px;
+}
+
+.code-wrapper {
+  font-size: 12px;
+}
+
+.show-code-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.show-code-button--active {
+  background-color: #2979ff;
+}

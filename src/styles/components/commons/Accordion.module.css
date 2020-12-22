@@ -1,0 +1,30 @@
+.wrapper {
+  border: 1px solid gray;
+}
+
+.label {
+  position: relative;
+  width: 100%;
+  padding: 12px 32px;
+  border: 1px solid gray;
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.label::before {
+  position: absolute;
+  left: 8px;
+  content: "\25BC";
+}
+
+.content {
+  display: none;
+  padding: 24px;
+  border: 1px solid gray;
+}
+
+.content--open {
+  display: block;
+}
+
