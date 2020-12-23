@@ -15,7 +15,7 @@ type Props = {
 }
 
 export const Example: React.FC<Props> = (props) => {
-  const { withRHF, withState } = props
+  const { children, withRHF, withState } = props
   const [showCode, setShowCode] = useState<boolean>(false)
 
   const onClickShowCodeButton: React.MouseEventHandler = useCallback(() => {
@@ -24,6 +24,12 @@ export const Example: React.FC<Props> = (props) => {
 
   return (
     <div>
+      {children && (
+        <>
+          <p className={styles.comment}>{children}</p>
+          <hr className={styles.divider} />
+        </>
+      )}
       <button
         className={clsx({
           [styles['show-code-button']]: true,

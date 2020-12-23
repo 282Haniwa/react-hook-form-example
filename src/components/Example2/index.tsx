@@ -22,6 +22,19 @@ export const Example2: React.FC<Props> = () => {
         sample: <Example2WithRHF />,
         code: Example2WithRHFCode,
       }}
-    />
+    >
+      バリデーションありのフォームの実装です。
+      <br />
+      基本的なバリデーションに関してはロジックが用意してあるので、圧倒的に記述量が減ります。
+      <br />
+      値を引数にとってエラーメッセージを返り値とするカスタムバリデーション関数をregisterで設定することも可能です。
+      <br />
+      <br />
+      また、useFormのmodeプロパティを設定することで、バリデーションの走るタイミングを制御することも可能です。
+      <br />
+      <a href="https://react-hook-form.com/api#useForm">
+        https://react-hook-form.com/api#useForm
+      </a>
+    </Example>
   )
 }

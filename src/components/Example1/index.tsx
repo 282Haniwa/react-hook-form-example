@@ -22,6 +22,10 @@ export const Example1: React.FC<Props> = () => {
         sample: <Example1WithRHF />,
         code: example1WithRHFCode,
       }}
-    />
+    >
+      普通のフォームの実装です。
+      <br />
+      入力値のstateの定義やstateの変更のハンドリングを記述しなくていいので、コードの記述量が減ってすっきりとします。
+    </Example>
   )
 }
