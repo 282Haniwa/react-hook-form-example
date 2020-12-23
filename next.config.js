@@ -4,6 +4,7 @@
 const path = require('path')
 
 module.exports = {
+  assetPrefix: '/282Haniwa',
   webpack(config) {
     config.resolve.alias = {
       ...config.resolve.alias,
