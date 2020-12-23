@@ -4,7 +4,9 @@
 const path = require('path')
 
 module.exports = {
-  assetPrefix: process.env.GITHUB_PAGES ? process.env.REPOSITORY_NAME : '',
+  assetPrefix: process.env.GITHUB_PAGES
+    ? `/${process.env.REPOSITORY_NAME}`
+    : '',
   webpack(config) {
     config.resolve.alias = {
       ...config.resolve.alias,
