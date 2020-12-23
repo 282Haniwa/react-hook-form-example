@@ -4,7 +4,7 @@
 const path = require('path')
 
 module.exports = {
-  assetPrefix: '/282Haniwa',
+  assetPrefix: process.env.GITHUB_PAGES ? '/repository-name' : '',
   webpack(config) {
     config.resolve.alias = {
       ...config.resolve.alias,
