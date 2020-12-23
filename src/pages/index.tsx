@@ -29,6 +29,18 @@ const Home: NextPage = () => {
         <Accordion label="フィールドのリスト">
           <Example4 />
         </Accordion>
+        <Accordion label="その他参考になりそうなリンク">
+          <a href="https://react-hook-form.com/api">APIドキュメント</a>
+          <a href="https://react-hook-form.com/advanced-usage">
+            Advanced Usage
+          </a>
+          <a href="https://github.com/react-hook-form/react-hook-form/tree/master/examples">
+            サンプルコード
+          </a>
+          <a href="https://react-hook-form.com/advanced-usage#SmartFormComponent">
+            inputやselectをコンポーネント化するときのスマートな方法
+          </a>
+        </Accordion>
       </main>
     </div>
   )
