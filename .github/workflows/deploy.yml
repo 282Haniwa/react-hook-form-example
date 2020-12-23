@@ -6,6 +6,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: https://282haniwa.github.io/react-hook-form-example/
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 12
