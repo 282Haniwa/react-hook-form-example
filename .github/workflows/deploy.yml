@@ -20,7 +20,7 @@ jobs:
           yarn build
         env:
           GITHUB_PAGES: true
-          REPOSITORY_NAME: true
+          REPOSITORY_NAME: ${{ secrets.REPOSITORY_NAME }}
       - name: export
         run: |
           yarn export
