@@ -1,0 +1,1 @@
+self.__BUILD_MANIFEST = {__rewrites:[],"/":["static\u002Fcss\u002Fb67eebb95b4548f1d41d.css","static\u002Fchunks\u002Fpages\u002Findex-a5d2afe035db14cf01a0.js"],"/_error":["static\u002Fchunks\u002Fpages\u002F_error-07bec0ee3db42ce18ff5.js"],sortedPages:["\u002F","\u002F_app","\u002F_error"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
