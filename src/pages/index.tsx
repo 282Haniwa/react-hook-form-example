@@ -8,13 +8,14 @@ import { Example3 } from 'src/components/Example3'
 import { Example4 } from 'src/components/Example4'
 import { Example5 } from 'src/components/Example5'
 import styles from 'src/styles/Home.module.css'
+import { getAssetsUrl } from 'src/utils/assetsUtil'
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
         <title>react-hook-formを布教したい</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={getAssetsUrl('/favicon.ico')} />
       </Head>
 
       <header className={styles.header}>
@@ -25,14 +26,14 @@ const Home: NextPage = () => {
           <a className={styles['icon-link']} href={process.env.TWITTER_URL}>
             <img
               className={styles['icon']}
-              src="/icons/Twitter_Social_Icon_Circle_Color.png"
+              src={getAssetsUrl('/icons/Twitter_Social_Icon_Circle_Color.png')}
               alt="Author's Twitter."
             />
           </a>
           <a className={styles['icon-link']} href={process.env.REPOSITORY_URL}>
             <img
               className={styles['icon']}
-              src="/icons/GitHub-Mark-120px-plus.png"
+              src={getAssetsUrl('/icons/GitHub-Mark-120px-plus.png')}
               alt="GitHub repository."
             />
           </a>
