@@ -13,13 +13,13 @@ type Props = {}
 export const Example5: React.FC<Props> = () => {
   return (
     <Example
-      withState={{
-        // label: '例',
+      left={{
+        label: '実装例',
         sample: <Example5WithRHF />,
         code: Example5WithRHFCode,
       }}
-      withRHF={{
-        // label: 'TextFieldコンポーネント',
+      right={{
+        label: 'TextFieldコンポーネント',
         sample: '',
         code: TextFieldCode,
       }}

@@ -5,17 +5,18 @@ import { a11yDark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import styles from 'src/styles/components/commons/Example.module.css'
 
 export type ExampleItem = {
+  label?: string
   sample: React.ReactNode
   code: React.ReactNode
 }
 
 type Props = {
-  withRHF: ExampleItem
-  withState: ExampleItem
+  left: ExampleItem
+  right: ExampleItem
 }
 
 export const Example: React.FC<Props> = (props) => {
-  const { children, withRHF, withState } = props
+  const { children, left, right } = props
   const [showCode, setShowCode] = useState<boolean>(false)
 
   const onClickShowCodeButton: React.MouseEventHandler = useCallback(() => {
@@ -41,8 +42,8 @@ export const Example: React.FC<Props> = (props) => {
       </button>
       <div className={styles['example-wrapper']}>
         <div className={styles['example-item']}>
-          <h3>従来の実装</h3>
-          {!showCode && withState.sample}
+          <h3>{left.label}</h3>
+          {!showCode && left.sample}
           {showCode && (
             <div className={styles['code-wrapper']}>
               <SyntaxHighlighter
@@ -50,14 +51,14 @@ export const Example: React.FC<Props> = (props) => {
                 language="typescript"
                 style={a11yDark}
               >
-                {withState.code}
+                {left.code}
               </SyntaxHighlighter>
             </div>
           )}
         </div>
         <div className={styles['example-item']}>
-          <h3>react-hook-formを使った実装</h3>
-          {!showCode && withRHF.sample}
+          <h3>{right.label}</h3>
+          {!showCode && right.sample}
           {showCode && (
             <div className={styles['code-wrapper']}>
               <SyntaxHighlighter
@@ -65,7 +66,7 @@ export const Example: React.FC<Props> = (props) => {
                 language="typescript"
                 style={a11yDark}
               >
-                {withRHF.code}
+                {right.code}
               </SyntaxHighlighter>
             </div>
           )}

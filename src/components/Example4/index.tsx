@@ -14,11 +14,13 @@ type Props = {}
 export const Example4: React.FC<Props> = () => {
   return (
     <Example
-      withState={{
+      left={{
+        label: '従来の実装',
         sample: <Example4WithState />,
         code: Example4WithStateCode,
       }}
-      withRHF={{
+      right={{
+        label: 'react-hook-formを使った実装',
         sample: <Example4WithRHF />,
         code: Example4WithRHFCode,
       }}
