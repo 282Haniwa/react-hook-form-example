@@ -86,7 +86,6 @@ const Home: NextPage = () => {
             </li>
           </ul>
         </Accordion>
-        <footer>{process.env.REPOSITORY_URL}</footer>
       </main>
     </div>
   )
