@@ -4,6 +4,10 @@
 const path = require('path')
 
 module.exports = {
+  env: {
+    REPOSITORY_URL: process.env.REPOSITORY_URL,
+    TWITTER_URL: process.env.TWITTER_URL,
+  },
   assetPrefix: process.env.GITHUB_PAGES
     ? `/${process.env.REPOSITORY_NAME}`
     : '',

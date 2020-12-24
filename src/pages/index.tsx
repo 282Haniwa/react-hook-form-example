@@ -13,14 +13,36 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>react-hook-formの布教用</title>
+        <title>react-hook-formを布教したい</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <header className={styles.header}>
+        <div>
+          <h1 className={styles.title}>react-hook-formを布教したい</h1>
+        </div>
+        <div className={styles['links']}>
+          <a className={styles['icon-link']} href={process.env.TWITTER_URL}>
+            <img
+              className={styles['icon']}
+              src="/icons/Twitter_Social_Icon_Circle_Color.png"
+              alt="Author's Twitter."
+            />
+          </a>
+          <a className={styles['icon-link']} href={process.env.REPOSITORY_URL}>
+            <img
+              className={styles['icon']}
+              src="/icons/GitHub-Mark-120px-plus.png"
+              alt="GitHub repository."
+            />
+          </a>
+        </div>
+      </header>
+
       <main className={styles.main}>
-        <h1>react-hook-formを布教したい</h1>
         <p>
-          react-hook-formを使うと、フォームをハンドリングするコードをコンパクトにできます。
+          <a href="https://react-hook-form.com/jp/">react-hook-form</a>
+          を使うと、フォームをハンドリングするコードをコンパクトにできます。
           <br />
           フォームのステートの管理やバリデーションのタイミングなどもある程度デフォルトで設定されているので全てのロジックを実装する必要がなくなります。
           <br />
@@ -63,6 +85,7 @@ const Home: NextPage = () => {
             </li>
           </ul>
         </Accordion>
+        <footer>{process.env.REPOSITORY_URL}</footer>
       </main>
     </div>
   )
