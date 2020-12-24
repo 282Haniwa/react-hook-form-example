@@ -18,6 +18,14 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <h1>react-hook-formを布教したい</h1>
+        <p>
+          react-hook-formを使うと、フォームをハンドリングするコードをコンパクトにできます。
+          <br />
+          フォームのステートの管理やバリデーションのタイミングなどもある程度デフォルトで設定されているので全てのロジックを実装する必要がなくなります。
+          <br />
+          いくつか従来のフォームの実装と比較した例を置いておくので、比較して良いと思ったら是非use-hook-formを採用していってください！
+        </p>
         <Accordion label="通常のフォーム">
           <Example1 />
         </Accordion>
