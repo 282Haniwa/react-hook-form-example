@@ -45,7 +45,7 @@ export const Example4WithRHF: React.FC<Props> = () => {
                 />
               </div>
               <div className={`flex-column ${styles.field}`}>
-                <span>first name</span>
+                <span>last name</span>
                 <input
                   name={`users[${index}].lastName`}
                   ref={register()}

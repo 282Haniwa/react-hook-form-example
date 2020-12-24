@@ -87,7 +87,7 @@ export const Example4WithState: React.FC<Props> = () => {
                 />
               </div>
               <div className={`flex-column ${styles.field}`}>
-                <span>first name</span>
+                <span>last name</span>
                 <input
                   name={`users[${index}].lastName`}
                   onChange={onChangeUser(index)('lastName')}
